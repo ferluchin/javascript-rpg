@@ -1,6 +1,6 @@
 const characterData = {
     hero: {
-        name: "Wizard",
+        name: "Hechicero",
         // avatar: "./images/wizard.png",  // local path
         avatar: "https://raw.githubusercontent.com/ferluchin/javascript-rpg/ce694b63f0a83ec42ea3e831d8bd0c27d00c604f/images/wizard.png",
         health: 60,
@@ -8,7 +8,7 @@ const characterData = {
         currentDiceScore: []
     },
     orc: {
-        name: "Orc",
+        name: "Orco",
         // avatar: "public/orc.png",
         avatar: "https://raw.githubusercontent.com/ferluchin/javascript-rpg/ce694b63f0a83ec42ea3e831d8bd0c27d00c604f/images/orc.png",
         health: 30,
@@ -16,7 +16,7 @@ const characterData = {
         currentDiceScore: []
     },
     demon: {
-        name: "Demon",
+        name: "Demonio",
         // avatar: "./images/demon.png",
         avatar: "https://raw.githubusercontent.com/ferluchin/javascript-rpg/ce694b63f0a83ec42ea3e831d8bd0c27d00c604f/images/demon.png",
         health: 25,
@@ -24,7 +24,7 @@ const characterData = {
         currentDiceScore: []
     },
     goblin: {
-        name: "Goblin",
+        name: "Duende",
         // avatar: "./images/goblin.png",
         avatar: "https://raw.githubusercontent.com/ferluchin/javascript-rpg/ce694b63f0a83ec42ea3e831d8bd0c27d00c604f/images/goblin.png",
         health: 20,

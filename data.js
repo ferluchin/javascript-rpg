@@ -8,7 +8,7 @@ const characterData = {
     },
     orc: {
         name: "Orc",
-        avatar: "./images/orc.png",
+        avatar: "public/images/orc.png",
         health: 30,
         diceCount: 1,
         currentDiceScore: []

@@ -1,7 +1,7 @@
 const characterData = {
     hero: {
         name: "Wizard",
-        avatar: "./images/wizard.png",
+        avatar: "https://github.com/ferluchin/javascript-rpg/blob/ce694b63f0a83ec42ea3e831d8bd0c27d00c604f/images/wizard.png",
         health: 60,
         diceCount: 3,
         currentDiceScore: []

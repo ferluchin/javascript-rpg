@@ -1,50 +1,21 @@
-# Scrimba RPG Game
+# co18a47bdbaca8364c887067b
 
-Este es un proyecto de juego RPG creado para el curso Scrimba. Los héroes y monstruos luchan en una batalla épica hasta que sólo queda uno.
-
-## Características
-
-- Batallas heroicas entre personajes controlados por la IA
-- Sistema de doble ataque y defensa
-- Interfaz atractiva con gráficos personalizados
-
-## Tecnologías utilizadas
-
-- JavaScript
-- HTML/CSS
-- Webpack
-- Babel
-- SASS
-
-## Instalación
-
-Primero, clona el repositorio a tu máquina local con:
+Quick start:
 
 ```
-git clone https://github.com/zsoltadam92/Scrimba-RPG-Game.git
-```
+$ npm install
+$ npm start
+````
 
-Luego, en el directorio del proyecto, ejecuta:
+Head over to https://vitejs.dev/ to learn more about using vite
+## About Scrimba
 
+At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
+If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
+The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
 
-```
-npm install
-```
-Esto instalará todas las dependencias necesarias para el proyecto.
+- [Our courses](https://scrimba.com/allcourses)
+- [The Frontend Career Path](https://scrimba.com/learn/frontend)
+- [Become a Scrimba Pro member](https://scrimba.com/pricing)
 
-Uso
-Para ejecutar el proyecto en modo de desarrollo, usa:
-
-
-```
-npm run dev
-```
-Para construir el proyecto para producción, usa:
-
-
-```
-npm run build
-```
-
-
-Esto creará una versión optimizada del proyecto en la carpeta dist/.
+Happy Coding!

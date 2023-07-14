@@ -1,0 +1,24 @@
+@use '../util' as *;
+
+button {
+  margin: rem(16) 0;
+  font-family: 'MedievalSharp', cursive;
+  background-color: #fcc02a;
+  border: rem(2) solid #963404;
+  outline: none;
+  padding-left:5vw;
+  padding-right:5vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: rem(24);
+  border-radius: rem(6);
+  cursor: pointer;
+  color:#963404;
+  height:9vh;
+  box-shadow: 0px rem(6) rem(10) rem(-4) rgba(0,0,0,0.4);
+
+  @include breakpoints_up(rem(550)) {
+    margin-top: 0;
+  }
+}

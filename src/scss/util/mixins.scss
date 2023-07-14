@@ -1,0 +1,84 @@
+@use 'functions' as *;
+
+@mixin breakpoints-up($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin breakpoints-down($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+
+@mixin displayFlexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin smallDice() {
+  width: 5.5vh;
+  height: 5.5vh;
+}
+
+@mixin bigDice() {
+  width: 8vh;
+  height: 8vh;
+}
+
+@mixin actions($action) {
+  &__#{$action} {
+    width: rem(40);
+    height: rem(40);
+    border: rem(2) solid #fff;
+    border-radius: 50%;
+    padding: rem(5);
+    position: relative;
+    overflow: hidden;
+
+    @include breakpoints_up(rem(550)) {
+      width: rem(50);
+      height: rem(50);
+    }
+  }
+
+  &__#{$action}-content {
+    position: absolute;
+    top: rem(10);
+    left: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 16px;
+
+    
+    @include breakpoints_up(rem(550)) {
+      top: rem(11);
+      font-size: rem(24);
+    }
+  }
+
+  &__#{$action}-load {
+    background: green;
+    // height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+  }
+}

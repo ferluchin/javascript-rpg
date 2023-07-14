@@ -1,0 +1,112 @@
+@use '../util' as *;
+
+
+.panel {
+  // border-radius: rem(10);
+  @include smallDice();
+  perspective: 400px;  
+  
+  @include for-tablet-landscape-up {
+    @include bigDice();
+    perspective: 620px;
+  }
+}
+
+
+.dice {
+  @include smallDice();
+  position: relative;
+  transform-style: preserve-3d;
+  // transform: translateZ(-20px) rotateY(0deg) rotateX(90deg);
+  // transition: transform 1s;  
+    
+  @include for-tablet-landscape-up {
+    @include bigDice();
+  }
+
+  &__side {
+    @include smallDice();
+    position: absolute;
+    background-color: green;
+    // border-radius: rem(5);
+    line-height: 5.5vh;
+    
+    @include for-tablet-landscape-up {
+      @include bigDice();
+      line-height: 8.5vh;
+    }
+
+    &--1 {
+      @include displayFlexCenter();
+      transform: rotateX(-90deg) translateZ(2.75vh);
+      z-index: 1;
+
+      @include for-tablet-landscape-up {
+        transform: rotateX(-90deg) translateZ(4vh);
+      }
+    }
+    &--2 {
+      @include displayFlexCenter();
+      transform: rotateY(180deg) translateZ(2.75vh);
+      z-index: 2;
+
+      @include for-tablet-landscape-up {
+        transform: rotateY(180deg) translateZ(4vh);
+      }
+    }
+    &--3 {
+      @include displayFlexCenter();
+      transform: rotateY(90deg) translateZ(2.75vh);
+      z-index: 3;
+
+      @include for-tablet-landscape-up {
+        transform: rotateY(90deg) translateZ(4vh);
+      }
+    }
+    &--4 {
+      @include displayFlexCenter();
+      transform: rotateY(0deg) translateZ(2.75vh);
+      z-index: 4;
+
+      @include for-tablet-landscape-up {
+        transform: rotateY(0deg) translateZ(4vh);
+      }
+    }
+    &--5 {
+      @include displayFlexCenter();
+      transform: rotateY(-90deg) translateZ(2.75vh);
+      z-index: 5;
+
+      @include for-tablet-landscape-up {
+        transform: rotateY(-90deg) translateZ(4vh);
+      }
+    }
+    &--6 {
+      @include displayFlexCenter();
+      transform: rotateX(90deg) translateZ(2.75vh);
+      z-index: 6;
+
+      @include for-tablet-landscape-up {
+        transform: rotateX(90deg) translateZ(4vh);
+      }
+    }
+  }
+  
+  &__num {
+    color: white;
+    font-size: 2rem;
+
+    @for $i from 2 through 5 {
+      &--#{$i} {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.dice__side-monster {
+  background-color: $monster-dice;
+}
+.dice__side-hero {
+  background-color: $hero-dice;
+}

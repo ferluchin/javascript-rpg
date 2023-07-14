@@ -1,0 +1,22 @@
+@use '../util' as *;
+
+main {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+  .cards {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    @include breakpoints_up(rem(550)) {
+      flex-direction: row;
+      margin:6vh 5vw;
+      justify-content: center;
+      width:86vw;
+    }
+  }
+} 
+

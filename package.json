@@ -4,12 +4,12 @@
   "description": "RPG game from Scrimba",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config webpack.config.js",
     "dev": "webpack serve"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zsoltadam92/Scrimba-RPG-Game.git"
+    "url": "git+https://github.com/ferluchin/javascript-rpg"
   },
   "keywords": [],
   "author": "",

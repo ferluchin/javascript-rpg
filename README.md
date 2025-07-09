@@ -2,6 +2,8 @@
 
 ---
 
+## English
+
 # JavaScript RPG Game
 
 🎮 **[Play the Live Demo](https://javascript-rpg.netlify.app/)**
@@ -66,6 +68,8 @@ To run this project on your local machine:
 - `images/`: Contains the character avatar images.
 
 ---
+
+## Español
 
 # Juego RPG en JavaScript
 

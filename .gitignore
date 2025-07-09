@@ -399,3 +399,8 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# MacOS Finder files
+# Ignore .DS_Store files created by macOS Finder
+.DS_Store
+
